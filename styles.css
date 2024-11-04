@@ -87,4 +87,51 @@ header p {
 @keyframes slideUp {
     from { transform: translateY(30px); opacity: 0; }
     to { transform: translateY(0); opacity: 1; }
+}/* Estilo del Formulario de Inicio de Sesión */
+#login {
+    max-width: 400px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #021b2b;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+#login h2 {
+    color: #ff0841;
+}
+
+#login label {
+    display: block;
+    margin-top: 10px;
+    color: #b10c43;
+}
+
+#login input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #b10c43;
+    border-radius: 5px;
+}
+
+#login button {
+    background-color: #b10c43;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#login button:hover {
+    background-color: #ff0841;
+}
+
+#loginMessage {
+    font-size: 0.9em;
+    color: #ff0841;
+    margin-top: 10px;
 }

@@ -12,7 +12,21 @@
         <p>Ofrecemos ayuda para todo tipo de servicios migratorios</p>
     </header>
 
-    <section id="servicios">
+    <!-- Formulario de Inicio de Sesión -->
+    <section id="login">
+        <h2>Inicio de Sesión</h2>
+        <form id="loginForm">
+            <label for="username">Usuario:</label>
+            <input type="text" id="username" name="username" required>
+            <label for="password">Contraseña:</label>
+            <input type="password" id="password" name="password" required>
+            <button type="submit">Iniciar Sesión</button>
+            <p id="loginMessage" style="color: red; display: none;">Usuario o contraseña incorrecta</p>
+        </form>
+    </section>
+
+    <!-- Sección de Servicios (se oculta inicialmente) -->
+    <section id="servicios" style="display: none;">
         <h2>Nuestros Servicios</h2>
         <ul>
             <li>Control Migratorio</li>
@@ -22,5 +36,7 @@
             <li>Licenciatura en Migración</li>
         </ul>
     </section>
+
+    <script src="script.js"></script>
 </body>
 </html>
