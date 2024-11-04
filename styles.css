@@ -1,10 +1,13 @@
+/* Fondo y estilo general */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f0f0f0;
+    background: linear-gradient(135deg, #4e54c8, #8f94fb);
+    color: #333;
 }
 
+/* Encabezado */
 header {
     background-color: #333;
     color: white;
@@ -12,11 +15,30 @@ header {
     text-align: center;
 }
 
+header h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+header p {
+    font-size: 1.2em;
+    margin-top: 5px;
+}
+
+/* Sección de Servicios */
 #servicios {
+    max-width: 800px;
+    margin: 40px auto;
     padding: 20px;
-    margin: 20px;
     background-color: white;
-    border-radius: 5px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#servicios h2 {
+    font-size: 2em;
+    text-align: center;
+    color: #4e54c8;
 }
 
 #servicios ul {
@@ -25,6 +47,24 @@ header {
 }
 
 #servicios li {
-    padding: 8px;
-    border-bottom: 1px solid #ddd;
+    padding: 15px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+#servicios li:hover {
+    background-color: #f1f1f1;
+    cursor: pointer;
+}
+/* Transición suave en todos los elementos */
+* {
+    transition: all 0.3s ease;
+}
+
+/* Efecto Hover en los Elementos de Servicios */
+#servicios li:hover {
+    background-color: #e8e8ff;
+    transform: scale(1.02);
 }
