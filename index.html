@@ -7,9 +7,10 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
+
+    <!-- Contenedor del Encabezado y Bienvenida -->
+    <header id="mainHeader" style="display: none;">
         <h1>Bienvenido a Servicios de Migración</h1>
-        <p>Ofrecemos ayuda para todo tipo de servicios migratorios</p>
     </header>
 
     <!-- Formulario de Inicio de Sesión -->
@@ -23,9 +24,11 @@
             <button type="submit">Iniciar Sesión</button>
             <p id="loginMessage" style="color: red; display: none;">Usuario o contraseña incorrecta</p>
         </form>
+        <!-- Mostrar credenciales diarias para ti -->
+        <p id="dailyCredentials" style="color: green; font-weight: bold;"></p>
     </section>
 
-    <!-- Sección de Servicios (se oculta inicialmente) -->
+    <!-- Sección de Servicios (centrada y oculta hasta el inicio de sesión) -->
     <section id="servicios" style="display: none;">
         <h2>Nuestros Servicios</h2>
         <ul>

@@ -1,4 +1,4 @@
-/* Estilo general del cuerpo de la página */
+/* Estilos generales de la página */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -6,130 +6,68 @@ body {
     background-color: #02031a;
     color: #ffffff;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
     min-height: 100vh;
-    transition: background-color 0.5s;
 }
 
-/* Estilo del encabezado */
-header {
+/* Estilo del encabezado principal */
+#mainHeader {
     background-color: #b10c43;
     color: white;
-    padding: 30px;
+    padding: 15px;
     text-align: center;
-    border-radius: 15px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
-    margin-bottom: 20px;
-    animation: fadeIn 1s ease-in-out;
+    width: 100%;
+    font-size: 2em;
 }
 
-header h1 {
-    font-size: 2.5em;
-    margin: 0;
-}
-
-header p {
-    font-size: 1.2em;
-    margin-top: 10px;
-    color: #ff0841;
+/* Formulario de Inicio de Sesión */
+#login {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #021b2b;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 /* Sección de Servicios */
 #servicios {
     max-width: 800px;
-    margin: 40px auto;
+    margin: 40px;
     padding: 20px;
     background-color: #021b2b;
-    border-radius: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
-    animation: slideUp 1s ease-out;
-    color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    text-align: center;
 }
 
 #servicios h2 {
-    font-size: 2em;
-    text-align: center;
     color: #ff0841;
-    margin-bottom: 20px;
 }
 
-/* Lista de Servicios */
 #servicios ul {
     list-style-type: none;
     padding: 0;
 }
 
 #servicios li {
-    padding: 15px;
-    margin: 15px 0;
     background-color: #02031a;
-    border: 2px solid #b10c43;
-    border-radius: 12px;
     color: #ffffff;
-    transition: transform 0.3s ease, background-color 0.3s ease;
-    cursor: pointer;
-    animation: fadeIn 1.5s ease;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #b10c43;
+    border-radius: 8px;
+    transition: background-color 0.3s, transform 0.3s;
 }
 
 #servicios li:hover {
     background-color: #b10c43;
-    color: #ffffff;
     transform: scale(1.05);
 }
 
-/* Animaciones */
-@keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
-}
-
-@keyframes slideUp {
-    from { transform: translateY(30px); opacity: 0; }
-    to { transform: translateY(0); opacity: 1; }
-}/* Estilo del Formulario de Inicio de Sesión */
-#login {
-    max-width: 400px;
-    margin: 40px auto;
-    padding: 20px;
-    background-color: #021b2b;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    text-align: center;
-}
-
-#login h2 {
-    color: #ff0841;
-}
-
-#login label {
-    display: block;
-    margin-top: 10px;
-    color: #b10c43;
-}
-
-#login input {
-    width: 100%;
-    padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #b10c43;
-    border-radius: 5px;
-}
-
-#login button {
-    background-color: #b10c43;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-#login button:hover {
-    background-color: #ff0841;
-}
-
+/* Mensaje de error */
 #loginMessage {
     font-size: 0.9em;
     color: #ff0841;
